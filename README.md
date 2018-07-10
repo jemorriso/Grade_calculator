@@ -19,3 +19,4 @@ After you are finished updating the class grades, the program reads the data ins
 
 Below, a sample class creation is shown, with the output that it produces. 
 
+![Screenshot](../master/GradeExample.PNG)
