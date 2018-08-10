@@ -2,7 +2,6 @@ import java.util.Scanner;
 import java.io.*;
 import java.nio.file.*;
 
-
 // class defines operations on grade calculation. We need to be able to read the file, write to the file, and calculate the grade
 public class classCalculator
 {
@@ -67,7 +66,9 @@ public class classCalculator
 			}
 
 			//System.out.println("points inside method: " + pointsSum);
-			System.out.print(((gradeSum / weightSum) * 100) + "%");
+			double rounder = (gradeSum / weightSum) * 100;
+			String round = String.format("%.2f", rounder);
+			System.out.print(round + "%");
 			String grade = grade(gradeSum / weightSum * 100);
 			
 			if (grade.equals("A") || grade.equals("A-") || grade.equals("A+"))
